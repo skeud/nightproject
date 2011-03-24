@@ -46,6 +46,12 @@ doctrine:
                 mappings:
                     AcmeDemoBundle: ~
 
+doctrine_mongo_db:
+    document_managers:
+        default:
+            mappings:
+                SiteBundle: ~
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: %mailer_transport%

@@ -1,3 +1,5 @@
+<?php
+
 namespace Immosquare\SiteBundle\Document;
 
 /**
@@ -16,32 +18,67 @@ class Property
     protected $name;
 
     /**
-     * Get id
-     *
-     * @return integer $id
+     * @mongodb:Field(type="string")
      */
-    public function getId()
-    {
+    protected $phone;
+
+    /**
+     * @mongodb:Field(type="string")
+     */
+    protected $email;
+
+    /**
+     * @mongodb:Field(type="string")
+     */
+    protected $title;
+
+    /**
+     * @mongodb:Field(type="string")
+     */
+    protected $address;
+
+
+    public function setAddress($address) {
+        $this->address = $address;
+    }
+
+    public function getAddress() {
+        return $this->address;
+    }
+
+    public function setEmail($email) {
+        $this->email = $email;
+    }
+
+    public function getEmail() {
+        return $this->email;
+    }
+
+    public function getId() {
         return $this->id;
     }
 
-    /**
-     * Set name
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
+    public function setName($name) {
         $this->name = $name;
     }
 
-    /**
-     * Get name
-     *
-     * @return string $name
-     */
-    public function getName()
-    {
+    public function getName() {
         return $this->name;
+    }
+
+    public function setPhone($phone) {
+        $this->phone = $phone;
+    }
+
+    public function getPhone() {
+        return $this->phon
+    }
+
+    public function setTitle($title) {
+        $this->title = $title;
+    }
+
+    public function getTitle() {
+        return $this->title;
     }
 }
