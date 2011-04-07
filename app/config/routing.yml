@@ -1,8 +1,3 @@
-_property:
-    resource: "@ImmosquareSiteBundle/Controller/PropertyController.php"
-    type: annotation
-    prefix: /property
-
 _welcome:
     pattern:  /
     defaults: { _controller: AcmeDemoBundle:Welcome:index }
