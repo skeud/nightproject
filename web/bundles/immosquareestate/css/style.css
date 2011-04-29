@@ -44,10 +44,12 @@ body {
 
 #sr_sidebar {
     float: left;
+    background-color: green;
     width: 200px;
 }
 
 #sr_list {
     float: left;
+    background-color: blue;
     width: 760px;
 }

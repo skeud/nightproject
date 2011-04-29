@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PropertyController extends Controller
 {
-    public function indexAction()
+    public function searchAction()
     {
-        return $this->render('ImmosquareEstateBundle:Welcome:index.html.twig');
+        return $this->render('ImmosquareEstateBundle:Property:searchresults.html.twig');
     }
 }

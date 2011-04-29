@@ -8,8 +8,20 @@
     </head>
     <body>
         <div id="container">
-            {% block content %}
-            {% endblock %}
+            <div id="header">
+                {% block header %}
+                    fr | de | en
+                {% endblock %}
+            </div>
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div id="footer">
+                {% block footer %}
+                    Copyright © {{ "now"|date("Y") }} Immosquare.ch
+                {% endblock %}
+            </div>
         </div>
     </body>
 </html>
