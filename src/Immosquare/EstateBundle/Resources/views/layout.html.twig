@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ asset('bundles/immosquareestate/css/style.css') }}" type="text/css" media="all" />
+        <title>{% block title %}Immosquare.ch{% endblock %}</title>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div id="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

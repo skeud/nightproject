@@ -4,10 +4,10 @@ namespace Immosquare\EstateBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class PropertyController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ImmosquareEstateBundle:Default:index.html.twig');
+        return $this->render('ImmosquareEstateBundle:Welcome:index.html.twig');
     }
 }
